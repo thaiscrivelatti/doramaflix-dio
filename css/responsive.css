@@ -1,0 +1,43 @@
+@media screen and (max-width: 1024px) {
+    .drama-principal {
+        height: 80vh;   
+    }
+    .drama-principal .container{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .menu-principal logo {
+        font-size: 90%;
+    }
+
+    .menu-principal nav {
+        display: none;
+    }
+
+    .menu-principal .menu-mobile {
+        display: block;
+    }
+
+    .menu-secundario nav .infantil {
+        display: none   ;
+    }
+
+    .botao {
+        margin-top: 5px;
+        font-size: 95%;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .drama-principal .descricao {
+        font-size: 95%;
+    }
+}

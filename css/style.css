@@ -1,0 +1,182 @@
+/* Declaração de variáveis no CSS */
+:root{ 
+    --vermelho: #ff758f;
+    --preta:    #141414;
+    --linknav: #FFF;
+    --linknavhover: #AAA;
+}
+
+/* Reset */
+*{ /* asterisco = para todos os elementos da página */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para que elementos maiores não "empurrem" a caixa principal */
+}
+
+/* Elementos base */
+body{
+    background: var(--preta);
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-principal .logo{
+    margin-right: 20px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.menu-principal a, .menu-secundario a {
+    text-decoration: none;
+    color: var(--linknav);
+    margin-right: 10px;
+}
+
+.menu-principal a;hover, .menu-secundario a:hover{
+    color: var(--linknavhover);
+}
+
+.menu-principal .menu-mobile {
+    display: none;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+}
+
+.menu-secundario nav {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-secundario nav .item {
+    margin-right: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile .avatar {
+    width: 30px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.container {
+    margin: 0 3%;
+    padding: 10px;
+}
+
+/* Drama principal */
+.drama-principal {
+    width: 100%;
+    font-size: 16px;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/msrfundo.jpg); 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.drama-principal .container {
+    width: 36%;
+}
+
+.drama-principal .container img {
+    width: 100%;
+    height: auto;
+}
+
+.drama-principal .descricao {
+    margin: 20px 0;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.botao {
+    background-color: rgba(168, 168, 168, 0.3); 
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    /*transition: .3s ease all;*/
+}
+
+.botao:first-child{
+    background-color: #fff;
+    color: var(--preta)
+}
+.botao:hover{
+    background-color: rgba(168, 168, 168, .2);
+}
+.botao:first-child:hover {
+    background-color: rgba(255, 255, 255, .8)
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-drama {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.titulo-secao{
+    margin-top: -40px;
+    margin-left: 5%;
+    padding-bottom: 10px;
+}
+
+/* Owl Carousel */
+.owl-nav{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.owl-theme .owl-nav, .owl-theme .owl-nav [class*=owl-]{
+    margin: 0!important;  
+    height: 100%;
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span{
+    font-size: 80px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover{
+    color: #FFF;
+    background: linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20)100%);
+    height: 100%;
+}
+
+.owl-dots {
+    display: none;
+}
